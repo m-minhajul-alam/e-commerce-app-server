@@ -1,11 +1,18 @@
-const express = require("express");
+import express from "express";
+import bodyParser from "body-parser";
+import { productRoutes, orderRoutes } from "./routes";
+import connectDB from "./utils/db";
+
 const app = express();
-const port = 3000;
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+// Middleware
+app.use(bodyParser.json());
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+// Routes
+app.use("/api", productRoutes);
+app.use("/api", orderRoutes);
+
+// Connect to DB
+connectDB();
+
+export default app;
