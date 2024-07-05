@@ -1,6 +1,6 @@
-# E-Commerce API
+# E-Commerce App Server
 
-This is an E-Commerce API built with Express, TypeScript, MongoDB, and Mongoose. The project follows a modular pattern and includes endpoints for managing products and orders, with data validation using Joi.
+This is an E-Commerce App Server built with Express, TypeScript, MongoDB, and Mongoose. The project follows a modular pattern and includes endpoints for managing products and orders, with data validation using Joi.
 
 ## Features
 
@@ -347,11 +347,3 @@ This is an E-Commerce API built with Express, TypeScript, MongoDB, and Mongoose.
     ]
   }
   ```
-
-## Contributing
-
-Feel free to submit issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License.
